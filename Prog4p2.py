@@ -9,15 +9,15 @@ class Ventana():
         self.inicio()
 
     def inicio(self):
-        Label(self.ven, text='Usuario').pack(pady=10)  # self.ven
+        Label(self.ven, text='Usuario').pack(pady=10)  
         self.us = Entry(self.ven)
         self.us.pack(pady=3)
         
-        Label(self.ven, text='Password').pack(pady=10)  # self.ven
-        self.pas = Entry(self.ven, show='*')  # self.ven y show='*' para ocultar
+        Label(self.ven, text='Password').pack(pady=10)  
+        self.pas = Entry(self.ven, show='*')  
         self.pas.pack(pady=3)
         
-        boton = Button(self.ven, text='Aceptar', command=self.revisar).pack(pady=3)  # self.ven y self.revisar
+        boton = Button(self.ven, text='Aceptar', command=self.revisar).pack(pady=3)  
         
         self.ven.mainloop()
 
